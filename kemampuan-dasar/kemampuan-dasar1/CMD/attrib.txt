@@ -1,0 +1,11 @@
+
+C:\Users\Acer>attrib
+A   H   I            C:\Users\Acer\NTUSER.DAT
+A  SH                C:\Users\Acer\ntuser.dat.LOG1
+A  SH                C:\Users\Acer\ntuser.dat.LOG2
+A  SH                C:\Users\Acer\NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+A  SH                C:\Users\Acer\NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+A  SH                C:\Users\Acer\NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+   SH                C:\Users\Acer\ntuser.ini
+
+ini untuk menampilkan, mengatur, atau menghapus atribut read-only, archive, system, dan hidden yang terpasang pada file atau folder

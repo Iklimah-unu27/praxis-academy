@@ -1,0 +1,5 @@
+C:\Users\Acer>date
+The current date is: 05/10/2020
+Enter the new date: (dd-mm-yy)
+
+ini untuk Mengaktifkan atau menonaktifkan fitur perintah-echoing, menampilkan pesan di laya

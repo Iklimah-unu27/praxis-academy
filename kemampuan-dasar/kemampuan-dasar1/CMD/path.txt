@@ -1,0 +1,4 @@
+C:\Users\Acer>path
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps
+
+ini untuk menampilkan atau menetapkan path pencarian untuk file executable

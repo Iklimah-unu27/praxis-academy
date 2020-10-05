@@ -1,0 +1,4 @@
+C:\Users\Acer>chcp
+Active code page: 850
+
+ini untuk menampilkan jumlah halaman kode konsol yang kosong

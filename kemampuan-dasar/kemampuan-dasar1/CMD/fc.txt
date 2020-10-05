@@ -1,0 +1,4 @@
+C:\Users\Acer>fc
+FC: Insufficient number of file specifications
+
+ini untuk membandingkan dua file

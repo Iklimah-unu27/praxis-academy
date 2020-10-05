@@ -1,0 +1,5 @@
+C:\Users\Acer>vol
+ Volume in drive C has no label.
+ Volume Serial Number is 54BE-DA34
+
+ini untuk menunjukkan label volume disk dan nomor seri

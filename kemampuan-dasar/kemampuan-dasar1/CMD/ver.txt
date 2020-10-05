@@ -1,0 +1,5 @@
+C:\Users\Acer>ver
+
+Microsoft Windows [Version 10.0.18362.1082]
+
+ini untuk menampilkan nomor versi OS yang diinstal

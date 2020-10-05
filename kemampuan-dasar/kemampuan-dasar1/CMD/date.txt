@@ -1,0 +1,6 @@
+C:\Users\Acer>date
+The current date is: 05/10/2020
+Enter the new date: (dd-mm-yy)
+
+ini untuk melihat dan menampilkan data 
+

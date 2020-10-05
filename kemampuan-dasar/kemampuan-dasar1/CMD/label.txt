@@ -1,0 +1,7 @@
+C:\Users\Acer>label
+Volume in drive C: has no label
+Volume Serial Number is 54BE-DA34
+Volume label (32 characters, ENTER for none)?
+
+
+ini untuk mengedit disk label

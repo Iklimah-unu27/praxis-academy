@@ -1,0 +1,4 @@
+C:\Users\Acer>whoami
+desktop-uri78bu\acer
+
+ini untuk menampilkan informasi tentang pengguna aktif

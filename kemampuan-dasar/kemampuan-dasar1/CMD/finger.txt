@@ -1,0 +1,15 @@
+C:\Users\Acer>finger
+
+Displays information about a user on a specified system running the
+Finger service. Output varies based on the remote system.
+
+FINGER [-l] [user]@host [...]
+
+  -l        Displays information in long list format.
+  user      Specifies the user you want information about. Omit the user
+            parameter to display information about all users on the
+            specifed host.
+  @host     Specifies the server on the remote system whose users you
+            want information about.
+
+ini untuk menampilkan informasi tentang pengguna pada komputer jarak jauh yang ditentukan
