@@ -82,7 +82,7 @@ Python merupakan bahasa pemrograman tingkat tinggi yang dikembangkan oleh Guido 
         Python 1.6 – 5 September 2000
     Python 2.0 – 16 Oktober 2000
         Python 2.1 – 17 April 2001
-        Python 2.2 – 21 Desemberg 2001
+        Python 2.2 – 21 Desember 2001
         Python 2.3 – 29 Juli 2003
         Python 2.4 – 30 Nopember 2004
         Python 2.5 – 19 September 2006
