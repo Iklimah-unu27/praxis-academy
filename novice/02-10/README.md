@@ -101,6 +101,10 @@ output "halo semua nama saya iklima"
 Modul adalah objek Python dengan atribut yang diberi nama yang bisa dijadikan referensi. 
 modul adalah file yang terdiri dari kode Python yang dapat mendefinisikan fungsi, kelas dan variabel. Modul juga bisa menyertakan kode yang bisa dijalankan “runable”
 
+def print_func( par ):
+   print ("Halo : ", par)
+   return
+
 #### Import Statement
 Kita dapat menggunakan file sumber Python apapun sebagai modul dengan mengeksekusi pernyataan 
 impor di file sumber Python lainnya. Ketika interpreter menemukan sebuah pernyataan import, 
