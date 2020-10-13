@@ -105,6 +105,7 @@ def print_func( par ):
    print ("Halo : ", par)
    return
 
+
 #### Import Statement
 Kita dapat menggunakan file sumber Python apapun sebagai modul dengan mengeksekusi pernyataan 
 impor di file sumber Python lainnya. Ketika interpreter menemukan sebuah pernyataan import, 
@@ -112,4 +113,22 @@ ia mengimpor modul jika modul tersebut ada di jalur pencarian. Jalur pencarian a
 direktori yang ditafsirkan juru bahasa sebelum mengimpor modul. Misalnya, untuk mengimpor 
 modul hello.py, kita perlu meletakkan perintah berikut di bagian atas script.
  
+### Syntax Error
+Syntax Errors adalah suatu keadaan saat kode python mengalami kesalahan penulisan. 
+Python interpreter dapat mendeteksi kesalahan ini saat kode dieksekusi. Output dari program 
+yang dieksekusi akan menampilkan pesan "invalid syntax". Penanganan Syntax Errors dilakukan
+dengan memperbaiki penulisan kode yang salah tersebut
 
+#### Exceptions
+Exceptions adalah suatu keadaan saat penulisan syntax sudah benar, namun kesalahan terjadi 
+karena syntax tidak bisa dijalankan. Banyak hal yang menyebabkan terjadinya Exceptions, mulai 
+dari kesalahan matematika, kesalahan nama function, kesalahan library, dan lain-lain
+
+#### ZeroDivisionError
+ZeroDivisonError adalah exceptions yang terjadi saat eksekusi program menghasilkan perhitungan matematika pembagian dengan angka nol (0).
+
+#### NameError
+NameError adalah exception yang terjadi saat kode melakukan eksekusi terhadap local name atau global name yang tidak terdefinisi. Misalnya saat menjumlahkan variable yang tidak didefinisikan, memanggil function yang tidak ada, dan lain-lain.
+
+#### TypeError
+TypeError adalah exception yang terjadi saat dilakukan eksekusi terhadap suatu operasi atau fungsi dengan type object yang tidak sesuai.

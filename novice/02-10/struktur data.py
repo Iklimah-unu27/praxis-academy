@@ -151,3 +151,9 @@ for sifat in kebalikan.keys():
 print ("contoh input dan  output")
 siapa = "iklima"
 print ("Halo semua nama saya" ,siapa)
+
+print("Syntax Error")
+print("contoh syntax error")
+print ("halo he hai")
+#(outputnya)=>SyntaxError: Missing parentheses in call to 'print'. Did you mean print("halo he hai ")?
+print ("setelah dikasih tanda () jadi tidak error")
