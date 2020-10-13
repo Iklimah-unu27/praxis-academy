@@ -60,16 +60,39 @@ def Mergesrt(alist):
             else:
                 alist[k]=setkanan[j]
                 j=j+1
-            k=k+1
-        while i < len(setkiri):
-            alist[k]=setkiri[1]
-            i=i+1
-            k=k+1
-        while j < len(setkanan):
-            alist[k]=setkanan[j]
-            j=j+1
-            k=k+1
+            k=k+1       
+            while i < len(setkiri):
+                alist[k]=setkiri[1]
+                i=i+1
+                k=k+1
+            while j < len(setkanan):
+                alist[k]=setkanan[j]
+                j=j+1
+                k=k+1
         print("Menggabungkan",alist)
     m = [54,67,99,34,32,8]
     Mergesrt(m)
     print(m)
+
+#contoh Shell Sort 
+#metode pertambahan menurun (diminishing increment)
+#Metode ini mengurutkan data dengan cara membandingkan suatu data dengan data lain yang 
+# memiliki jarak tertentu, kemudian dilakukan penukaran bila diperlukan
+def shellsrt(alist):
+    sublst = len(alist)//2
+    while sublst > 0:
+        for startposition in range(sublst):
+            gapInsertionSort(alist,startposition,sublst)
+        print("abis di increment", "listnya jadi",alist)
+        sublst = sublst // 2
+def gapInsertionSort(alist,start,gap):
+    for i in range(start+gap,len(alist),gap):
+        Value = alist[i]
+        position = i
+        while position>=gap and alist[position-gap]>Value:
+            alist[position]=alist[position-gap]
+            position = position-gap
+        alist[position]=Value
+alist = [47,43,54,54,75,78,42,78,56]
+shellsrt(alist)
+print(alist)

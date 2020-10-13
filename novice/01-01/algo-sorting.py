@@ -82,7 +82,7 @@ def shellsrt(alist):
     sublst = len(alist)//2
     while sublst > 0:
         for startposition in range(sublst):
-            gapInsertionSort(alist,startposition)
+            gapInsertionSort(alist,startposition,sublst)
         print("abis di increment", "listnya jadi",alist)
         sublst = sublst // 2
 def gapInsertionSort(alist,start,gap):
@@ -96,3 +96,64 @@ def gapInsertionSort(alist,start,gap):
 alist = [47,43,54,54,75,78,42,78,56]
 shellsrt(alist)
 print(alist)
+
+
+print ("Merge Sort")
+def ms (list):
+    print('Memecah List', list)
+    n = len(list)
+    if n < 2:
+        return list
+    else:
+        mid=n//2
+        left=list[:mid]
+        right=list[mid:]
+        ms(left)
+        ms(right)
+        i=0
+        j=0
+        k=0
+        while i < len (left) and j < len (right):
+            if left[i]>right[j]:
+                list[k]=left[i]
+                i=i+1
+            else:
+                list[k]=right[j]
+                j=j+1
+            k=k+1
+            while i < len (left):
+                list[k]=left[i]
+                i=i+1
+                k=k+1
+            while j < len (right):
+                list[k]=right[j]
+                j=j+1
+                k=k+1
+    print('Menggabungkan List', list)
+list = [2,5,60,43,27,10,89,17]
+ms(list)
+
+
+print("Quick Sort") 
+def qs(list,awal,akhir):
+    if awal < akhir:
+            pindex = partisi(list,awal,akhir)
+            qs(list,awal,pindex-1)
+            qs(list,pindex+1,akhir)
+
+def partisi(list,awal,akhir):
+    tengah = int(akhir/2)
+    pivot = list[tengah]
+    pindex = awal
+    for i in range(awal,tengah):
+        if list[i]>=pivot:
+            list[i],list[pindex]=list[pindex],list[i]
+            pindex = pindex + 1
+    list[pindex],list[tengah]=list[tengah],list[pindex]
+    print(list)
+    return pindex
+    
+list = [67,91,87,33,49,10,16,43,65,3]
+print('Data yang akan di sort :', list)
+print('Quick Sort :')
+qs(list,0,len(list)-1)
