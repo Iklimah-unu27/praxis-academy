@@ -33,3 +33,4 @@ print(f'aku sangat suka {tumbuhan}')
 print('kita sangat {} dia sanaget"{}!"'.format('rajin', 'pandai'))
 
 print('cerintanya si {0}, {1}, and {other}.'.format('ina', 'ini', other='itu'))
+
