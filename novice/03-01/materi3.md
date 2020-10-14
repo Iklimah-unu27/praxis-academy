@@ -1,23 +1,20 @@
 ## OOP ( Pemrograman Berorientasi Objek )
 
-Pemrograman berorientasi objek ( OOP ) adalah paradigma pemrograman yang didasarkan pada konsep 
-objek yang dapat memuat data dan kode data dalam bentuk field dan kode dalam bentuk prosedur/metode. lebih mudahnya OOP adalah paradigma atau teknik pemrograman di mana semua hal dalam program 
-dimodelkan seperti objek dalam dunia nyata, objek di dunia nyata memiliki ciri atau attribut 
-dan juga aksi atau kelakuan.Fitur objek adalah prosedur objek itu sendiri dapat mengakses dan 
-sering kali memodifikasi bidang datanya sendiri. 
+OOP (Pemrograman berorientasi objek) adalah paradigma pemrograman yang didasarkan pada konsep objek 
+yang dapat memuat data dan kode data dalam bentuk field dan kode dalam bentuk prosedur/metode. Lebih mudahnya OOP adalah teknik pemrograman di mana semua hal dalam program dimodelkan seperti objek dalam dunia nyata. Objek di dunia nyata memiliki ciri atau attribut juga aksi atau kelakuan.Fitur objek 
+adalah prosedur objek itu sendiri dapat mengakses dan sering kali memodifikasi bidang datanya sendiri. 
 
 Bahasa pemrograman berorientasi objek (OOP) dibuat, seperti Simula, Smalltalk, C++, C #, Eiffel, 
 PHP, dan Java. Dalam bahasa ini, data dan metode untuk memanipulasinya disimpan sebagai satu unit 
 yang disebut objek. Salah satu fitur yang membedakan dari OOP yaitu satu-satunya cara bahwa objek 
 lain atau pengguna akan dapat mengakses data melalui metode objek. 
 
-Semua unit dalam program bisa dianggap sebagai objek. Objek besar dibangun dari objek – objek 
-yang lebih kecil. Objek yang satu berinteraksi dengan objek yang lain, sehingga semua 
-menjadi sebuah kesatuan yang utuh. Python dari awal dibuat sudah mengadopsi OOP. Selain itu 
-Python juga bisa menggunakan paradigma pemrograman lama yaitu pemrograman terstruktur. 
+Semua unit dalam program bisa dianggap sebagai objek. Objek besar dibangun dari objek–objek yang 
+lebih kecil. Objek yang satu berinteraksi dengan objek yang lain, sehingga semua menjadi sebuah 
+kesatuan yang utuh. Python menggunakan paradigma pemrograman lama yaitu pemrograman terstruktur. 
 Oleh karena itu, Python disebut bersifat hibrid.
 
-Berikut istilah yang berkaitan dengan tentang OOP:
+#### Berikut istilah yang berkaitan dengan tentang OOP:
 - Kelas – Kelas adalah cetak biru atau prototipe dari objek dimana kita mendefinisikan atribut dari suatu objek. Atribut ini terdiri dari data member (variabel) dan fungsi (metode).
 - Variabel Kelas – Variabel kelas adalah variabel yang dishare atau dibagi oleh semua instance (turunan) dari kelas. Variabel kelas didefinisikan di dalam kelas, tapi di luar metode-metode yang ada dalam kelas tersebut.
 - Data member – Data member adalah variabel yang menyimpan data yang berhubungan dengan kelas dan objeknya
@@ -29,3 +26,5 @@ Variabel instansiasi – Variabel instansiasi adalah variabel yang didefinisikan
 - Instansiasi – Instansiasi adalah pembuatan instance/objek dari suatu kelas
 Metode – Metode adalah fungsi yang didefinisikan di dalam suatu kelas
 - Objek – Objek adalah instansiasi atau perwujudan dari sebuah kelas. Bila kelas adalah prototipenya, dan objek adalah barang jadinya
+
+
