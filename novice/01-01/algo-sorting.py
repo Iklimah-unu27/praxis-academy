@@ -39,7 +39,6 @@ DaftarAngka = [23,7,32,99,4,15,11,20]
 SelectionSort(DaftarAngka)
 print(DaftarAngka)
 
-#contoh Shell Sort
 #algoritma yang stau jenis dengan insertion sort, dimana pada setiap nilai i dalam n/i item 
 #diurutkan. Pada setiap pergantian nilai, i dikurangi sampai 1 sebagai nilai terakhir
 def Mergesrt(alist):
@@ -74,7 +73,6 @@ def Mergesrt(alist):
     Mergesrt(m)
     print(m)
 
-#contoh Shell Sort 
 #metode pertambahan menurun (diminishing increment)
 #Metode ini mengurutkan data dengan cara membandingkan suatu data dengan data lain yang 
 # memiliki jarak tertentu, kemudian dilakukan penukaran bila diperlukan
