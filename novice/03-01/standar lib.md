@@ -1,7 +1,7 @@
 ##  Singkat Perpustakaan Standar
 
 Bawaan dir()dan help()fungsi berguna sebagai alat bantu interaktif untuk bekerja dengan modul besar seperti os:
-1. Antarmuka Sistem Operasi
+
 >>> import os
 >>> dir(os)
 <returns a list of all module functions>
@@ -9,19 +9,20 @@ Bawaan dir()dan help()fungsi berguna sebagai alat bantu interaktif untuk bekerja
 <returns an extensive manual page created from the module's docstrings>
 
 Untuk file harian dan tugas manajemen direktori, shutilmodul menyediakan antarmuka tingkat tinggi yang lebih mudah digunakan:
+
 >>> import shutil
 >>> shutil.copyfile('data.db', 'archive.db')
 'archive.db'
 >>> shutil.move('/build/executables', 'installdir')
 'installdir'
 
-###### File Wildcard
+#### File Wildcard
 The globmodul menyediakan fungsi untuk membuat daftar file dari pencarian direktori wildcard:
 >>> import glob
 >>> glob.glob('*.py')
 ['primes.py', 'random.py', 'quote.py']
 
-###### Command Line Arguments (Argumen Baris Perintah)
+#### Command Line Arguments (Argumen Baris Perintah)
 Skrip utilitas umum sering kali perlu memproses argumen baris perintah. Argumen ini disimpan dalam atribut argvsys modul sebagai daftar. Misalnya hasil keluaran berikut dari berjalan di baris perintah:python demo.py one two three
 >>> import sys
 >>> print(sys.argv)
@@ -37,14 +38,14 @@ args = parser.parse_args()
 print(args)
 Saat dijalankan pada baris perintah dengan , skrip disetel ke dan ke .python top.py --lines=5 alpha.txt beta.txtargs.lines5args.filenames['alpha.txt', 'beta.txt']
 
-###### Error Output Redirection & Program Termination (Kesalahan Pengalihan Output & Penghentian Program)
+#### Error Output Redirection & Program Termination (Kesalahan Pengalihan Output & Penghentian Program)
 Modul juga memiliki atribut untuk stdin , stdout , dan stderr . Yang terakhir berguna untuk memancarkan peringatan dan pesan kesalahan untuk membuatnya terlihat bahkan ketika stdout telah dialihkan:
 >>> sys.stderr.write('Warning, log file not found starting a new one\n')
 Warning, log file not found starting a new one
 
 Cara paling langsung untuk menghentikan skrip adalah dengan menggunakan sys.exit().
 
-###### String Pattern Matching (Pencocokan Pola String)
+#### String Pattern Matching (Pencocokan Pola String)
 Modul menyediakan alat ekspresi reguler untuk pengolahan string yang canggih. Untuk pencocokan dan manipulasi yang kompleks, ekspresi reguler menawarkan solusi ringkas dan dioptimalkan:
 
 >>> import re
@@ -53,7 +54,7 @@ Modul menyediakan alat ekspresi reguler untuk pengolahan string yang canggih. Un
 >>> re.sub(r'(\b[a-z]+) \1', r'\1', 'cat in the the hat')
 'cat in the hat'
 
-######  Mathematics (Matematika)
+####  Mathematics (Matematika)
 modul memberikan akses ke mendasari C fungsi perpustakaan untuk floating point matematika:
 >>> import math
 >>> math.cos(math.pi / 4)
@@ -82,7 +83,7 @@ The statisticsModul menghitung sifat statistik dasar (mean, median, varians, dll
 >>> statistics.variance(data)
 1.3720238095238095
 
-###### Internet Access (Akses Internet)
+#### Internet Access (Akses Internet)
 Ada sejumlah modul untuk mengakses internet dan memproses protokol internet. Dua cara yang paling sederhana adalah urllib.requestuntuk mengambil data dari URL dan smtplibuntuk mengirim email:
 >>> from urllib.request import urlopen
 >>> with urlopen('http://tycho.usno.navy.mil/cgi-bin/timer.pl') as response:
@@ -103,7 +104,7 @@ Ada sejumlah modul untuk mengakses internet dan memproses protokol internet. Dua
 ... """)
 >>> server.quit()
 
-###### Dates and Times (Tanggal dan Waktu)
+#### Dates and Times (Tanggal dan Waktu)
 The datetimepersediaan modul kelas untuk memanipulasi tanggal dan waktu di kedua sederhana dan cara yang kompleks. Sementara aritmatika tanggal dan waktu didukung, fokus implementasinya adalah pada ekstraksi anggota yang efisien untuk pemformatan dan manipulasi keluaran. Modul ini juga mendukung objek yang peka zona waktu.
 >>> from datetime import date
 >>> now = date.today()
@@ -117,7 +118,7 @@ datetime.date(2003, 12, 2)
 >>> age.days
 14368
 
-###### Data Compression (Kompresi Data)
+#### Data Compression (Kompresi Data)
 Pengarsipan data umum dan kompresi format secara langsung didukung oleh modul termasuk: zlib, gzip, bz2, lzma, zipfiledan tarfile.
 >>> import zlib
 >>> s = b'witch which has which witches wrist watch'
@@ -131,7 +132,7 @@ b'witch which has which witches wrist watch'
 >>> zlib.crc32(s)
 226805979
 
-###### Performance Measurement (Pengukuran Kinerja)
+#### Performance Measurement (Pengukuran Kinerja)
 Python menyediakan alat pengukuran untuk mengetahui kinerja relatif dari pendekatan yang berbeda untuk masalah yang sama. The timeit Modul cepat menunjukkan keunggulan kinerja yang sederhana:
 
 >>> from timeit import Timer
@@ -142,7 +143,7 @@ Python menyediakan alat pengukuran untuk mengetahui kinerja relatif dari pendeka
 
 Berbeda dengan timeittingkat perincian yang bagus, modul profiledan pstatsmenyediakan alat untuk mengidentifikasi bagian waktu yang penting dalam blok kode yang lebih besar.
 
-###### Quality Control(Kontrol Kualitas)
+#### Quality Control(Kontrol Kualitas)
 Salah satu pendekatan untuk mengembangkan perangkat lunak berkualitas tinggi adalah menulis pengujian untuk setiap fungsi saat dikembangkan dan menjalankan pengujian tersebut secara sering selama proses pengembangan.
 The doctestmodul menyediakan alat untuk memindai modul dan memvalidasi tes tertanam dalam docstrings program ini. Konstruksi pengujian sesederhana memotong dan menempelkan panggilan biasa beserta hasilnya ke dalam docstring. Ini meningkatkan dokumentasi dengan memberikan contoh kepada pengguna dan memungkinkan modul doctest untuk memastikan kode tetap sesuai dengan dokumentasi:
 
@@ -173,7 +174,7 @@ class TestStatisticalFunctions(unittest.TestCase):
 
 unittest.main()
 
-###### Batteries Included(Baterai Termasuk)
+#### Batteries Included(Baterai Termasuk)
 Python memiliki filosofi "termasuk baterai". Hal ini paling baik dilihat melalui kemampuan canggih dan kuat dari paket yang lebih besar. Sebagai contoh:
 
 - The xmlrpc.clientdan xmlrpc.servermodul membuat melaksanakan prosedur panggilan jarak jauh ke dalam tugas yang hampir sepele. Terlepas dari nama modul, tidak diperlukan pengetahuan langsung atau penanganan XML.
