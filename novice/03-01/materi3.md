@@ -26,7 +26,7 @@ Metode – Metode adalah fungsi yang didefinisikan di dalam suatu kelas
 - Objek – Objek adalah instansiasi atau perwujudan dari sebuah kelas. Bila kelas adalah prototipenya, dan objek adalah barang jadinya
 
 ### Pengertian Class
-class adalah mekanisme yang digunakan untuk membuat struktur data pengguna baru yang ditentukan. Ini berisi data serta metode yang digunakan untuk memproses data tersebut.r
+class adalah mekanisme yang digunakan untuk membuat struktur data pengguna baru yang ditentukan. Ini berisi data serta metode yang digunakan untuk memproses data tersebut.
 
 ### Pengertian Instance
 Instance adalah salinan class dengan nilai sebenarnya , secara harfiah merupakan objek class tertentu.
@@ -37,6 +37,7 @@ Anda menggunakan nama class, diikuti dengan tanda kurung. Jadi jika nama classny
 Dengan notasi titik — misalnya, instance_name.attribute_name
 Sebuah fungsi yang didefinisikan di dalam class.
 Argumen pertama dari setiap metode merujuk pada instance class saat ini, yang menurut konvensi, diberi nama self. Dalam __init__metode ini, selfmengacu pada objek yang baru dibuat; sementara dalam metode lain, selfmengacu pada contoh yang metode namanya disebut. 
+
 #### Pengertian Init
 __init__Metode menginisialisasi sebuah instance dari class.
 class child mewarisi semua atribut dan perilaku parents

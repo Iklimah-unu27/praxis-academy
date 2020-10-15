@@ -70,7 +70,7 @@ class Kucing:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-Jadi sementara setiap Kucing memiliki nama dan umur yang unik, setiap Kucing akan menjadi. 
+Jadi sementara setiap Kucing memiliki nama dan umur yang unik. 
 
 ##### Instantiating Objek
 Instansiasi adalah untuk menciptakan instance class baru yang unik
@@ -80,7 +80,7 @@ Instansiasi adalah untuk menciptakan instance class baru yang unik
 ...
 >>> Kucing()
 <__main__.Kucing object at 0x1004ccc50>
->>> Dog()
+>>> Kucing()
 <__main__.Kucing object at 0x1004ccc90>
 >>> a = Kucing()
 >>> b = Kucing()

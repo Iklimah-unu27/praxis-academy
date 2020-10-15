@@ -26,15 +26,15 @@ class Kucing:
         self.name = name
         self.age = age
     def description(self):
-        return "{} is {} years old".format(self.name, self.age)
+        return "{} sekarang {} bulan umurnya".format(self.name, self.age )
     def speak(self, sound):
         return "{} says {}".format(self.name, sound)
 class RussellTerrier(Kucing):
     def run(self, speed):
-        return "{} runs {}".format(self.name, speed)
-class BullDog(Kucing):
+        return "{} jalannya {}".format(self.name, speed)
+class Lucu(Kucing):
     def run(self, speed):
-        return "{} runs {}".format(self.name, speed)
-moew = BullDog("kity", 12)
+        return "{} jalannya {}".format(self.name, speed)
+moew = Lucu("kity", 2)
 print(moew.description())
-print(moew.run("slowly"))
+print(moew.run("lambat"))
