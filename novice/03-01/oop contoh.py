@@ -15,9 +15,9 @@ class Kitab(Santri, Pondok):
         self.kitab = kitab
         Santri.__init__(self, nama, pondok)
         Pondok.__init__(self, mushola)
-        print("santri putri bernama {nida}, di pondok {indah}, sedang duduk di{mushola}, ngaji{kitab}")
+        print("santri putri bernama {}, di pondok {}, sedang duduk {}, ngaji{}.".format(self.nama, self.pondok, self.mushola, self.kitab))
 
-Data_Kitab = Kitab ('nama', 'pondok', 'mushola', 'kitab')
+Data_Kitab = Kitab ('Nida', 'Darul Quran', 'mushola', 'tajwid')
 
 ### coba lagi
 class Kucing:
