@@ -42,6 +42,5 @@ other association)
 
 Menggunakan kartu kecil meminimalkan kerumitan desain. Ini memfokuskan desainer pada esensi kelas dan mencegah mereka masuk ke detail dan implementasinya pada saat detail seperti itu mungkin kontra-produktif. Itu juga mengecilkan hati memberi kelas terlalu banyak tanggung jawab. Karena kartu ini portabel, kartu dapat dengan mudah diletakkan di atas meja dan diatur ulang saat mendiskusikan desain.
 
-
 Contoh nya bisa dilihat di https://faishal15.wordpress.com/2016/09/29/crc-modelling-dan-class-diagram-dari-sistem-manajaemen-informasi-destinasi-wisata-bagi-turis/s
 
