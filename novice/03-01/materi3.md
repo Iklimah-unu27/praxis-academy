@@ -1,8 +1,6 @@
 ## OOP ( Pemrograman Berorientasi Objek )
 
-OOP (Pemrograman berorientasi objek) adalah paradigma pemrograman yang didasarkan pada konsep objek 
-yang dapat memuat data dan kode data dalam bentuk field dan kode dalam bentuk prosedur/metode. Lebih mudahnya OOP adalah teknik pemrograman di mana semua hal dalam program dimodelkan seperti objek dalam dunia nyata. Objek di dunia nyata memiliki ciri atau attribut juga aksi atau kelakuan.Fitur objek 
-adalah prosedur objek itu sendiri dapat mengakses dan sering kali memodifikasi bidang datanya sendiri. 
+OOP adalah paradigma pemrograman dan bukan konsep Python. Lebih mudahnya OOP adalah teknik pemrograman di mana semua hal dalam program dimodelkan seperti objek dalam dunia nyata. Objek di dunia nyata memiliki ciri atau attribut juga aksi atau kelakuan.Fitur objek adalah prosedur objek itu sendiri dapat mengakses dan sering kali memodifikasi bidang datanya sendiri. 
 
 Bahasa pemrograman berorientasi objek (OOP) dibuat, seperti Simula, Smalltalk, C++, C #, Eiffel, 
 PHP, dan Java. Dalam bahasa ini, data dan metode untuk memanipulasinya disimpan sebagai satu unit 
@@ -27,4 +25,18 @@ Variabel instansiasi – Variabel instansiasi adalah variabel yang didefinisikan
 Metode – Metode adalah fungsi yang didefinisikan di dalam suatu kelas
 - Objek – Objek adalah instansiasi atau perwujudan dari sebuah kelas. Bila kelas adalah prototipenya, dan objek adalah barang jadinya
 
+### Pengertian Class
+class adalah mekanisme yang digunakan untuk membuat struktur data pengguna baru yang ditentukan. Ini berisi data serta metode yang digunakan untuk memproses data tersebut.r
 
+### Pengertian Instance
+Instance adalah salinan class dengan nilai sebenarnya , secara harfiah merupakan objek class tertentu.
+Sementara class adalah cetak biru yang digunakan untuk menggambarkan bagaimana membuat sesuatu, instance adalah objek yang dibuat dari cetak biru tersebut.
+class PythonclassName:
+CamelCase notasi, dimulai dengan huruf kapital — yaitu, PythonclassName()
+Anda menggunakan nama class, diikuti dengan tanda kurung. Jadi jika nama classnya Kucing(), contoh Kucingnya adalah - my_class = Kucing().
+Dengan notasi titik — misalnya, instance_name.attribute_name
+Sebuah fungsi yang didefinisikan di dalam class.
+Argumen pertama dari setiap metode merujuk pada instance class saat ini, yang menurut konvensi, diberi nama self. Dalam __init__metode ini, selfmengacu pada objek yang baru dibuat; sementara dalam metode lain, selfmengacu pada contoh yang metode namanya disebut. 
+#### Pengertian Init
+__init__Metode menginisialisasi sebuah instance dari class.
+class child mewarisi semua atribut dan perilaku parents

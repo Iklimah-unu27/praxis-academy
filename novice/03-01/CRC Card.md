@@ -1,4 +1,4 @@
-### CRD Crad (responsibility )
+### CRD Card (responsibility )
 
 Merupakan dalah satu cara untuk pengaambaran diagram UML sederhana dimana crd card dapat 
 digunakan untuk mengetahui reponsibility dan kolaborasi yang ada dr sebuah kelas.
