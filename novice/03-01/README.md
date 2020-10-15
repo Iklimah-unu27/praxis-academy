@@ -93,3 +93,26 @@ Metode Instance didefinisikan di dalam class dan digunakan untuk mendapatkan isi
 ##### Warisan Python
 Warisan adalah proses dimana satu class mengambil atribut dan metode yang lain. class yang baru terbentuk disebut class anak , dan class class anak diturunkan dari class orang tua disebut .
 Penting untuk dicatat bahwa class anak menimpa atau memperluas fungsionalitas (misalnya, atribut dan perilaku) class orang tua. Dengan kata lain, class anak mewarisi semua atribut dan perilaku orang tua namun juga dapat menentukan perilaku yang berbeda untuk diikuti. Jenis class yang paling dasar adalah class objectyang umumnya mewarisi class lainnya sebagai orang tua mereka.
+
+
+### CRD Card (responsibility)
+CRC Card adalah satu cara untuk pengaambaran diagram UML sederhana dimana crd card dapat 
+digunakan untuk mengetahui reponsibility dan kolaborasi yang ada dr sebuah kelas.
+Kelas mewakili sekumpulan objek serupa. 
+Tanggung jawab adalah sesuatu yang diketahui atau dilakukan kelas, dan 
+kolaborator adalah kelas lain yang berinteraksi dengan kelas untuk memenuhi tanggung jawabnya
+
+Software system terdiri dari modul-modul, dimana masing-masing modul memiliki peran/fungsi yang khusus. Modul-modul tersebut saling berinteraksi dalam sistem. Pada program yang berorientasi obyek modul-modul tersebut berupa class.
+
+Class ≈ Moduld
+
+Menggunakan kartu kecil meminimalkan kerumitan desain. Ini memfokuskan desainer pada esensi kelas dan mencegah mereka masuk ke detail dan implementasinya pada saat detail seperti itu mungkin kontra-produktif. Itu juga mengecilkan hati memberi kelas terlalu banyak tanggung jawab. Karena kartu ini portabel, kartu dapat dengan mudah diletakkan di atas meja dan diatur ulang saat mendiskusikan desain.
+
+Kartu tersebut dibagi menjadi tiga area:
+
+    1. Di atas kartu, nama kelas
+    2. Di sebelah kiri, tanggung jawab kelas
+    3. Di sebelah kanan, kolaborator (kelas lain) yang berinteraksi dengan kelas ini untuk memenuhi tanggung jawabnya
+
+
+
