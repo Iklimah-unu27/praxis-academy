@@ -28,6 +28,45 @@ Metode – Metode adalah fungsi yang didefinisikan di dalam suatu kelas
 ### Pengertian Class
 class adalah mekanisme yang digunakan untuk membuat struktur data pengguna baru yang ditentukan. Ini berisi data serta metode yang digunakan untuk memproses data tersebut.
 
+class merupakan sebuah objek yang di dalam nya biasanya terdapat beberapa metode yang memang merupakan isi dari sebuah class ini. Class dan metode ini biasa di sebut sebagai OOP atau object oriented programing. Dan OOP ini memang fungsinya untuk memudahkan proses atau kegiatan programing. 
+
+class ini merupakan sebuah objek yang lebih complex dengan di dalamnya berisi beberapa metode. kalau metode berisi berbagai code program, maka class berisi beberapa metode
+
+konsepnya bisa dianaligokan terhadap sebuah ruang kelas. Dimana ruang kelas nya berfungsi sebagai class nya dan benda-benda yang ada di dalamnya seperti meja, kursi, papan, spidol dan yang lainnya adalah sebuah metode yang bisa kita panggil agar aktif bekerja sesuai fungsinya. Seperti sepidol yang berfungsi untuk menulis
+
+Untuk membuat sebuah class, harus kita awali dengan sebuah kata kunci. Yaitu “class” yang kemudian di ikuti dengan “nama class nya” dan yang terakhir adalah tanda kurung buka dan tutup serta tanda 
+titik dua “()” dan ‘:’. berikut contohnya
+
+class namaClass () :
+    def metode 1 (self) :
+        Isi metode
+    def metode 2 (self) :
+        Isi metode
+
+untuk memanggil sebuah class, sama seperti memanggil metode, Kita cukup menyebutkan nama classnya dengan di akhiri dengan tanda kurung buka dan tutup 
+
+namaClass()
+
+untuk memanggil metodenya, kita cukup menggunakan memanggil class yang kemudian di ikuti dengan pemanggilan nama metode yang tersedia di dalam class tersebut dengan di pisahkan oleh tanda titik. 
+
+namaClass().namaMetode()
+
+Namun, untuk memudahkan pemanggilan metode ini, kita bisa menampung class nya ke dalam sebuah variabel terlebih dahulu, yang kemudian kita panggil metodenya 
+
+penampung = namaClass()
+penampung.namaMetode()
+
+Di dalam sebuah class, biasanya terdapat sebuah metode yang namanya sudah di sediakan oleh python. Namanya adalah “__init__” dan jika contoh di atas kita tambahkan __init__ maka kurang lebih akan seperti
+
+class namaClass () :
+    def __init__() :
+        Isi yang ingin kalian masukkkan
+    def metode 1 (self) :
+        Isi metode
+    def metode 2 (self) :
+        Isi metode
+
+
 ### Pengertian Instance
 Instance adalah salinan class dengan nilai sebenarnya , secara harfiah merupakan objek class tertentu.
 Sementara class adalah cetak biru yang digunakan untuk menggambarkan bagaimana membuat sesuatu, instance adalah objek yang dibuat dari cetak biru tersebut.

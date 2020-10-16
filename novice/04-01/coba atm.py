@@ -11,7 +11,7 @@ user =  [
             {   
                 "id":"1998",
                 "no_rek":"1313131313",
-                "username":"Iklima",
+                "username":"Iniya",
                 "pin":"2020",
                 "saldo":20000000
             }
@@ -37,7 +37,7 @@ def cek_rek(no):
             return int(i)
     return -1
  
-def tranfer_uang(uang,no_rek):
+def transfer_uang(uang,no_rek):
     index1 = cek_user(user_id)
     index2 = cek_rek(no_rek)
     if index1 >= 0:
@@ -74,7 +74,7 @@ while pake_atm == "y":
             loop = "y"
         else:
             print("")
-            print("Nah loh pin nya salah")
+            print("Selamat Datang di percobaan")
             print("")
             print("")
      
@@ -96,7 +96,7 @@ while pake_atm == "y":
         elif a == 2:
             print("Untuk mentransfer silahkan masukan Nomer Rekening tujuan")
             no_rek = input("Masukan Nomer Rekening tujuan : ")
-            cnk = cek_rekening(no_rek)
+            cnk = cek_rek(no_rek)
              
             if cnk >= 0:
                 print("Nomor rekening benar,silahkan masukan nominal yang akan ditransfer")
