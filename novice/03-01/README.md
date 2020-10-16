@@ -38,8 +38,12 @@ Ada beberapa upaya untuk memformalkan konsep yang digunakan dalam pemrograman be
     
 Record adalah dasar untuk memahami objek jika literal fungsi dapat disimpan dalam bidang (seperti dalam bahasa pemrograman fungsional), tetapi kalkulus yang sebenarnya perlu jauh lebih kompleks untuk memasukkan fitur-fitur penting OOP.
 
-###### Class dengan Python
+#### Class dengan Python
 Berfokus pertama pada data, masing-masing benda atau benda merupakan turunan dari beberapa class. Struktur data primitif yang tersedia dengan Python, seperti angka, string, dan daftar dirancang untuk mewakili hal-hal sederhana
+
+class adalah mekanisme yang digunakan untuk membuat struktur data pengguna baru yang ditentukan. Ini berisi data serta metode yang digunakan untuk memproses data tersebut.
+
+class merupakan sebuah objek yang di dalam nya biasanya terdapat beberapa metode yang memang merupakan isi dari sebuah class ini. Class dan metode ini biasa di sebut sebagai OOP atau object oriented programing. Dan OOP ini memang fungsinya untuk memudahkan proses atau kegiatan programing. 
 
 ##### Cara Menentukan class dengan Python
 Mendefinisikan sebuah class sederhana dengan Python:
