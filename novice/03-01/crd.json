@@ -1,0 +1,67 @@
+[
+    {
+      "name": "Wali Santri ",
+      "superclasses": "",
+      "subclasses": "",
+      "type": 1,
+      "responsibilities": [
+        "mengatur kegiatan santri di pesantren",
+        "bertanggung jawab kepada orang tua santri ",
+        "mengajarkan santri disiplin mengaji"
+      ],
+      "collaborators": [
+        "pengurus pondok ",
+        "orang tua santri",
+        "santri"
+      ]
+    },
+    {
+      "name": "pengurus pondok",
+      "superclasses": "",
+      "subclasses": "",
+      "type": 1,
+      "responsibilities": [
+        "bertanggung jawab terhadap keamanan pondok ",
+        "menjadi contoh yang baik",
+        "mengaktifkan kegiatan di pondok"
+      ],
+      "collaborators": [
+        "wali santri",
+        "santri ",
+        "lingkunagan pondok"
+      ]
+    },
+    {
+      "name": "orang tua santri",
+      "superclasses": "",
+      "subclasses": "",
+      "type": 1,
+      "responsibilities": [
+        "membayar syahriyah/bulanan",
+        "berkomunikasi dengan pengurus/wali santri",
+        "mengirimi biaya hidup anaknya dipondok",
+        ""
+      ],
+      "collaborators": [
+        "pesantren",
+        "pengurus",
+        "anaknya / si santri"
+      ]
+    },
+    {
+      "name": "santri",
+      "superclasses": "",
+      "subclasses": "",
+      "type": 1,
+      "responsibilities": [
+        "mengaji ",
+        "memberi kabar kepada orang tua",
+        "taat pada peraturan pondok"
+      ],
+      "collaborators": [
+        "taat kyai",
+        "peraturan",
+        "pengurus"
+      ]
+    }
+  ]

@@ -1,5 +1,19 @@
 ##  Singkat Perpustakaan Standar
 
+Standard Library adalah kumpulan modul yang mempermudah dalam melakukan tugas tertentu untuk menghasilkan solusi dari suatu permasalahan tertentu. 
+
+Standar Library di Python merupakan kumpulan modul yang sudah terinstall di Python dan dapat kita gunakan langsung dalam sistem dan sudah diuji. 
+
+Standard Library meliputi modul untuk berinteraksi dengan sistem operasi, interpreter, internet, database, struktur data dsb. 
+Untuk menggunakan module tersebut dapat menggunakan syntax sebagai berikut import nama_module.
+
+Beberapa aplikasi standard Library di Python:
+- Program untuk melakukan backup rutin pada Linux, Solaris dan Mac, library standard yang dapat digunakan adalah os, stat, bz2, gzip, time, datetime, tar dan optparse
+- Program Apache log file analysis tool menggunakan modul optparse, urlparse, cgi, datetime, operator, re, sys, and mmap.
+- Program sederhana web API clients cukup menggunakan library urllib/urllib2, ElementTree, dan xml package
+- Program MySQL backup script menggunakan sys, os, time, shutil, glob, tarfile, dan optparse modules.
+
+
 Bawaan dir()dan help()fungsi berguna sebagai alat bantu interaktif untuk bekerja dengan modul besar seperti os:
 
 >>> import os
@@ -17,6 +31,7 @@ Untuk file harian dan tugas manajemen direktori, shutilmodul menyediakan antarmu
 'installdir'
 
 #### File Wildcard
+
 The globmodul menyediakan fungsi untuk membuat daftar file dari pencarian direktori wildcard:
 >>> import glob
 >>> glob.glob('*.py')
