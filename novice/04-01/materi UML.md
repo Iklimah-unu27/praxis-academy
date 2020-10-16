@@ -15,17 +15,41 @@ Masa itu terkenal dengan masa perang metodologi (method war) dalam pendesainan b
 Dimulai pada bulan Oktober 1994 Booch, Rumbaugh dan Jacobson, yang merupakan tiga tokoh yang boleh dikata metodologinya banyak digunakan mempelopori usaha untuk penyatuan metodologi pendesainan berorientasi objek.
 Pada tahun 1995 direlease draft pertama dari UML (versi 0.8). Sejak tahun 1996 pengembangan tersebut dikoordinasikan oleh Object Management Group (OMG).
 
-### Use Case Diagram
+UML sendiri telah menyediakan diagram diantaranya:
 
-Use case diagram digunakan untuk memodelkan semua bisnis proses berdasarkan perspektif pengguna sistem. Use case diagram terdiri atas diagram untuk use case dan actor.Actor merepresentasikan orang yang akan mengoperasikan atau orang yang berinteraksi dengan sistem aplikasi.
+1. Use Case Diagram
+digunakan untuk memodelkan semua bisnis proses berdasarkan perspektif pengguna sistem. Use case diagram terdiri atas diagram untuk use case dan actor.Actor merepresentasikan orang yang akan mengoperasikan atau orang yang berinteraksi dengan sistem aplikasi.
 
-Use case merepresentasikan operasi-operasi yang dilakukan oleh actor. Use case digambarkan berbentuk elips dengan nama operasi dituliskan di dalamnya.Actor yang melakukan operasi dihubungkan dengan garis lurus ke use case.
+2. Class diagram
+Yaitu salah satu jenis diagram yang digunakan untuk menampilkan kelas-kelas maupun paket-paket yang ada pada suatu sistem yang nantinya akan digunakan. Jadi diagram ini dapat memberikan sebuah gambaran mengenai sistem maupun relasi-relasi yang terdapat pada sistem tersebut.
 
-### Sequence Diagram
+3.  Sequence diagram
+Yaitu salah satu jenis diagram yang menjelaskan interaksi objek yang berdasarkan urutan waktu, sequence diagram juga dapat menggambarkan urutan atau tahapan yang harus dilakukan untuk dapat menghasilkan sesuatu seperti pada use case diagram.
 
-Sequence Diagram merupakan gabungan dari Diagram Class dan diagram Object yang memiliki suatu gambaran model statis. Diagram sequence merupakan salah satu diagram Interaction yang menjelaskan bagaimana suatu operasi itu dilakukan; message (pesan) apa yang dikirimdan kapan pelaksanaannya. Diagram ini diatur berdasarkan waktu. Objek-objek yang berkaitan dengan proses berjalannya operasi diurutkan dari kiri ke kanan berdasarkan waktu terjadinya dalam pesan yang terurut
+4. Statemachine diagram
+Yaitu salah satu jenis diagram pada UML yang menggambarkan transisi maupun perubahan keadaan suatu objek pada sistem.
 
-### Collaboration Diagram
+5. Communication diagram
+Yaitu salah satu jenis diagram yang dapat menggamabarkan tahapan terjadinya suatu aktivitas dan juga menggambarkan interaksi antara objek yang ada pada sistem. Hampir sama seperti sequence diagram akan tetapi communication diagram lebih menekankan kepada peranan masing-masing objek pada sistem.
 
-Collaboration diagram dipakai untuk memodelkan interaksi antar object di dalam sistem.Berbeda dengan sequence diagram yang lebih menonjolkan kronologis dari operasi-operasi yang dilakukan, collaboration diagram lebih fokus pada pemahaman atas keseluruhan operasi yang dilakukan oleh object.
+6. Deployment diagram
+Yaitu salah satu diagram yang menunjukan tata letak suatu sistem secara fisik, dapat juga dikatakan untuk menampilkan bagian-bagian softwere yang terdapat pada hardwere dan digunakan untuk menerapkan suatu sistem dan hubungan antara komponen hardwere. Jadi Deployment diagram intinya untuk menunjukan letak softwere pada hardwere yang digunakan sistem.
+
+7. Component diagram
+Yaitu salah satu jenis diagram yang menggambarkan softwere pada suatu sistem. Component diagram merupakan penerapan softwere dari satu ataupun lebih class, dan biasanya berupa file data atau .exe, source kode, table, dokumen dan lain sebagainya
+
+8. Object diagram
+yaitu salah satu jenis diagram yang menggambarkan objek-objek pada suatu sistem dan hubungan antarnya.
+
+9. Composite structure diagram
+Yaitu salah satu jenis diagram yang menggambarkan struktur internal dari penklasifikasian (class, component atau use case) dan termasuk titik-titik interaksi penklasifikasian kebagian lainnya dari suatu sistem. Hampir mirip dengan class diagram  tetapi composite structure diagram menggambarkan bagian-bagian dari individu kelas saja bukan semua kelas.
+
+10. Interaction Overview Diagram
+Yaitu salah satu jenis diagram pada UML yang berguna untuk men-visualisasikan kerjasama dan hubungan antara activity diagram dengan sequence diagram
+
+11. Package diagram
+Yaitu salah satu jenis diagram pada UML digunakan untuk mengelompokan kelas dan juga menunjukan bagaimana elemen model akan disusun serta mengambarkan ketergantungan antara paket-paket.
+
+12. Diagram Timing
+Yaitu salah satu jenis diagram pada UML yang disebut sebagai bentuk lain dari interaksi diagram, dimana fokus yang paling utamanya kepada waktu. Diagram timing berguna untuk menunjukan faktor-faktor yang membatasi waktu antara perubahan state terhadap objek yang berbeda.
 
