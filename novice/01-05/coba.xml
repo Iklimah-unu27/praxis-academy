@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<colors>
+		<id>01</id>
+		<warna>merah</warna>
+	    <makna>berani</makna>
+	<colors>
+		<id>02</id>
+		<warna>putih</warna>
+		<makna>suci</makna>
+	</colors>
+    <colors>
+		<id>03</id>
+		<warna>biru</warna>
+		<makna>dingin</makna>
+	</colors>
+    
+</root>

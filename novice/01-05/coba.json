@@ -1,0 +1,22 @@
+{
+    "colors": [ 
+      
+       { 
+          "id":"01", 
+          "warna": "merah", 
+          "makna": "berani" 
+       }, 
+      
+       { 
+          "id":"02", 
+          "warna": "putih", 
+          "makna": "suci" 
+       },
+       
+       {
+           "id" :"03",
+           "warna" :"biru",
+           "makna" :"dingin"
+       }
+    ]   
+  }
