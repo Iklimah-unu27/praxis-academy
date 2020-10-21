@@ -74,7 +74,7 @@ while pake_atm == "y":
             loop = "y"
         else:
             print("")
-            print("Selamat Datang di percobaan")
+            print("Ulangi PIN dengan benar")
             print("")
             print("")
      
