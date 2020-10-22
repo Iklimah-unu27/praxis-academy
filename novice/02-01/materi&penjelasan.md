@@ -46,7 +46,9 @@ val = [1, 2, 3, 4, 5, 6]
 list(map(lambda x: x * 2, val)) # [2, 4, 6, 8, 10, 12]
 'Ambil faktorial dgn mengalikan nilainya dengan item berikutnya'
 reduce(lambda: x, y: x * y, val, 1) # 1 * 1 * 2 * 3 * 4 * 5 * 6
+
 ### map  function
+
 map menerapkan fungsi ke setiap item secara berurutan, mengembalikan urutan resultan, dan mengurangi menggunakan fungsi untuk mengumpulkan setiap item dalam urutan menjadi satu nilai
 
 contoh map
@@ -57,15 +59,20 @@ for name in contoh_map:
     print(name)
 
 ### filter function
+
 Mirip dengan map, filter mengambil objek fungsi dan iterable dan membuat daftar baru.
 Seperti namanya, filter membentuk daftar baru yang hanya berisi elemen yang memenuhi kondisi tertentu, yaitu fungsi yang berikan mengembalikan True.
-
 
 fruit = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
 filter_object = filter(lambda s: s[0] == "A", fruit)
 print(list(filter_object)) # outputnya Apple, Apricot
 
 ### reduce Function
+
 mengurangi bekerja secara berbeda dari map dan filter. Itu tidak mengembalikan daftar baru berdasarkan fungsi dan iterable yang telah kita lewati. Sebaliknya, ini mengembalikan satu nilai.
 Dalam Python 3, reduce bukan fungsi bawaan dan dapat ditemukan di modul functools.
 
+rom functools import reduce
+list = [2, 4, 7, 3]
+print(reduce(lambda x, y: x + y, list))
+print("nilai awal: " + str(reduce(lambda x, y: x + y, list, 10)))
