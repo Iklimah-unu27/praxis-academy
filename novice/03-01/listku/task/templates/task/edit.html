@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <form method="POST" action="" class="mt-3">
+                {% csrf_token %}
+                <div class="form-group">
+                    <h4>Edit</h4><br>
+                    <input type="text" nama="nama" class="form-control" value="{{data.name}}">
+                    <input type="text" nama="Warna" class="form-control" value="{{data.Warna}}">
+                    <input type="text" nama="Jenis_Makanan" class="form-control" value="{{data.Jenis_Makanan}}">
+                    <button type="submit" class="btn btn-primary mt-2">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
