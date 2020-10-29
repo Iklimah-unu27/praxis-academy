@@ -2,8 +2,8 @@ from django.db import models
 #setiap merubah model harus melakukan migrate
 
 class Task(models.Model):
-    name= models.TextField(null=True, blank=False)
-    Warna = models.TextField(default='hijau')
-    Jenis_Makanan = models.TextField(default='default')
+    name = models.TextField(default='noname')
+    warna = models.TextField(default='pilih warna')
+    jenis_makanan = models.TextField(default='default')
 
 

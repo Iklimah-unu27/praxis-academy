@@ -25,9 +25,9 @@
         <label for="exampleInputEmail1"> Input Nama Makanan : </label>
         <input type="text" name="nama" class="form-control">
         <label for="exampleInputEmail1"> Warna : </label>
-        <input type="text" name="Warna" class="form-control">
+        <input type="text" name="warna" class="form-control">
         <label for="exampleInputEmail1"> Jenis Makanan : </label>
-        <input type="text" name="Jenis_Makanan" class="form-control">
+        <input type="text" name="jenis_makanan" class="form-control">
       </div>
       <button type="submit" class="btn btn-primary">Tambah</button>
     </form>
@@ -48,14 +48,15 @@
           </tr>
           {% for d in data %}
           <tr>
-            <th scope="row">{{forloop.counter}}></th>
+            <th scope="row">{{forloop.counter}}></th>  <!-- forloop untuk menampilkan(mastiin) nomer terurut tabel. tanda '<'' itu sengaja buat modif-->
             <td>{{d.name}}</td>
-            <td>{{d.Warna}}</td>
-            <td>{{d.Jenis_Makanan}}</td>
+            <td>{{d.warna}}</td>
+            <td>{{d.jenis_makanan}}</td>
             <td>
               <a class="btn btn-sm btn-success" href="/{{d.id}}">View</a>
               <a class="btn btn-sm btn-warning" href="/{{d.id}}/update">Edit</a>
-              <button type="button" class="btn btn-danger">Delete</button>
+              <a class="btn btn-sm btn-danger" href="/{{d.id}}/delete">Delete</a>
+              <!-- <button type="button" class="btn btn-danger">Delete</button> -->
             </td>
           </tr>
           {% endfor %}
