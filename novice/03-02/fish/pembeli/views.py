@@ -14,26 +14,26 @@ def index(req):
         { 'data': buyer,
         })
 
-# def detail(req, id):
-#     ikans = models.ikan.objects.filter(pk=id).first()
-#     return render(req, 'ikan/detail.html',
-#         { 'data': ikans,
-#         })
+def detail(req, id):
+    buyer = models.pembeli.objects.filter(pk=id).first()
+    return render(req, 'detail.html',
+        { 'data': buyer,
+        })
 
-# def edit(req, id):
-#     if req.POST:
-#         ikan = models.ikan.objects.filter(pk=id).update(
-#             jenis=req.POST['jenis'],
-#             harga=req.POST['harga'],
-#             diskon=req.POST['diskon'])  
-#         return redirect('/')
+def edit(req, id):
+    if req.POST:
+        pembeli = models.pembeli.objects.filter(pk=id).update(
+            nama_pmbli=req.POST['nama_pmbli'],
+            alamat=req.POST['alamat'],
+            total_beli=req.POST['total_beli'])  
+        return redirect('/')
 
-#     ikans = models.ikan.objects.filter(pk=id).first()
-#     return render(req, 'ikan/edit.html',
-#     {
-#         'data': ikans,
-#         })  
+    buyer = models.pembeli.objects.filter(pk=id).first()
+    return render(req, 'edit.html',
+    {
+        'data': buyer,
+        })  
 
-# def delete(req, id):
-#     models.ikan.objects.filter(pk=id).delete()
-#     return redirect('/')
+def delete(req, id):
+    models.pembeli.objects.filter(pk=id).delete()
+    return redirect('/')
