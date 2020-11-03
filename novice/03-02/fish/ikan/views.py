@@ -8,7 +8,7 @@ def index(req):
             jenis=req.POST['jenis'],
             harga=req.POST['harga'],
             diskon=req.POST['diskon'])
-        return redirect('/')
+        return redirect('/ikan/')
 
     ikans = models.ikan.objects.all()
     return render(req, 'ikan/index.html',
@@ -27,7 +27,7 @@ def edit(req, id):
             jenis=req.POST['jenis'],
             harga=req.POST['harga'],
             diskon=req.POST['diskon'])  
-        return redirect('/')
+        return redirect('/ikan/')
 
     ikans = models.ikan.objects.filter(pk=id).first()
     return render(req, 'ikan/edit.html',
@@ -37,5 +37,5 @@ def edit(req, id):
 
 def delete(req, id):
     models.ikan.objects.filter(pk=id).delete()
-    return redirect('/')
+    return redirect('/ikan/')
 

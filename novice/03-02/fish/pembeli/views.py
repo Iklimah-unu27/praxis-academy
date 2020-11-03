@@ -7,7 +7,7 @@ def index(req):
             nama_pmbli=req.POST['nama_pmbli'],
             alamat=req.POST['alamat'],
             total_beli=req.POST['total_beli'])
-        return redirect('/')
+        return redirect('/pembeli/')
 
     buyer = models.pembeli.objects.all()
     return render(req, 'index.html',                                                
@@ -36,4 +36,4 @@ def edit(req, id):
 
 def delete(req, id):
     models.pembeli.objects.filter(pk=id).delete()
-    return redirect('/')
+    return redirect('/pembeli/')
