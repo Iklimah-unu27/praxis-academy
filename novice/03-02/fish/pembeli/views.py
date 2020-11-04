@@ -7,10 +7,10 @@ def index(req):
             nama_pmbli=req.POST['nama_pmbli'],
             alamat=req.POST['alamat'],
             total_beli=req.POST['total_beli'])
-        return redirect('/pembeli/')
+        return redirect('/pembeli')
 
     buyer = models.pembeli.objects.all()
-    return render(req, 'index.html',                                                
+    return render(req, 'indexx.html',                                                
         { 'data': buyer,
         })
 
@@ -26,7 +26,7 @@ def edit(req, id):
             nama_pmbli=req.POST['nama_pmbli'],
             alamat=req.POST['alamat'],
             total_beli=req.POST['total_beli'])  
-        return redirect('/')
+        return redirect('/pembeli')
 
     buyer = models.pembeli.objects.filter(pk=id).first()
     return render(req, 'edit.html',
@@ -36,4 +36,4 @@ def edit(req, id):
 
 def delete(req, id):
     models.pembeli.objects.filter(pk=id).delete()
-    return redirect('/pembeli/')
+    return redirect('/pembeli')
