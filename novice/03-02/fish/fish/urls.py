@@ -21,5 +21,6 @@ urlpatterns = [
     path('ikan/', include('ikan.urls')),
     path('pembeli/', include('pembeli.urls')),
     path('penjual/', include('penjual.urls')),
+    path('iwak/', include('iwak.urls')),
     path('admin/', admin.site.urls),
 ]

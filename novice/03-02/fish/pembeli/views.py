@@ -7,7 +7,7 @@ def index(req):
             nama_pmbli=req.POST['nama_pmbli'],
             alamat=req.POST['alamat'],
             total_beli=req.POST['total_beli'])
-        return redirect('/pembeli')
+        return redirect('/pembeli/')
 
     buyer = models.pembeli.objects.all()
     return render(req, 'indexx.html',                                                

@@ -4,14 +4,14 @@
             <form method="POST" class="mt-3">
                 {% csrf_token %}
                 <div class="form-group">
-                    <h4> Halaman Edit Ikan Hias</h4><br>
-                    <input type="text" name="jenis" class="form-control" value="{{data.jenis}}">
+                    <h4> Edit Iwak Konsumsi </h4><br>
+                    <input type="text" name="nama_iwak" class="form-control" value="{{data.nama_iwak}}">
                     <input type="number" name="harga" class="form-control" value="{{data.harga}}">
-                    <input type="number" name="diskon" class="form-control" value="{{data.diskon}}">
+                    <input type="number" name="stok" class="form-control" value="{{data.stok}}">
                     <button type="submit" class="btn btn-primary mt-2">Simpan</button>
                 </div>
             </form>
         </div>
     </div>
-</div>
-<input type="button" class="btn btn-primary" aria-pressed="false" data-toggle="button" value="Kembali" onclick="history.back(-1)" />
+
+    <input type="button" class="btn btn-primary" aria-pressed="false" data-toggle="button" value="Kembali" onclick="history.back(-1)" />

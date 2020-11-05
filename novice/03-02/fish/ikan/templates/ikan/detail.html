@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
+
+</head>
+<br>
+<body>
 <div class="container">
     <div class="row">
         <div class="col-sm">
@@ -20,7 +33,18 @@
                         </tr>
                     </tbody>
                 </table>
+                <input type="button" class="btn btn-primary" aria-pressed="false" data-toggle="button" value="Kembali"
+                onclick="history.back(-1)" />
             </div>
         </div>
     </div>
 </div>
+</body>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#table_id').DataTable();
+    });
+</script>
