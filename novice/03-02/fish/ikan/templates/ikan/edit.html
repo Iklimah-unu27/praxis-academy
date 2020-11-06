@@ -5,8 +5,10 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <h4> Halaman Edit Ikan Hias</h4><br>
+                    <input type="text" name="nama" class="form-control" value="{{data.nama}}">
                     <input type="text" name="jenis" class="form-control" value="{{data.jenis}}">
-                    <input type="number" name="harga" class="form-control" value="{{data.harga}}">
+                    <input type="number" name="harga_satuan" class="form-control" value="{{data.harga_satuan}}">
+                    <input type="number" name="harga_kiloan" class="form-control" value="{{data.harga_kiloan}}">
                     <input type="number" name="diskon" class="form-control" value="{{data.diskon}}">
                     <button type="submit" class="btn btn-primary mt-2">Simpan</button>
                 </div>

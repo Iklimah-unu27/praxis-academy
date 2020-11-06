@@ -5,8 +5,10 @@ from . import models
 def index(req):
     if req.POST:
         models.ikan.objects.create(
+            nama=req.POST['nama'],
             jenis=req.POST['jenis'],
-            harga=req.POST['harga'],
+            harga_satuan=req.POST['harga_satuan'],
+            harga_kiloan=req.POST['harga_kiloan'],
             diskon=req.POST['diskon'])
         return redirect('/ikan/')
 
@@ -24,8 +26,10 @@ def detail(req, id):
 def edit(req, id):
     if req.POST:
         ikan = models.ikan.objects.filter(pk=id).update(
+            nama=req.POST['nama'],
             jenis=req.POST['jenis'],
-            harga=req.POST['harga'],
+            harga_satuan=req.POST['harga_satuan'],
+            harga_kiloan=req.POST['harga_kiloan'],
             diskon=req.POST['diskon'])  
         return redirect('/ikan/')
 

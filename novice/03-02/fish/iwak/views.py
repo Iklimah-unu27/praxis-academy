@@ -5,8 +5,8 @@ def Iwak(req):
     if req.POST:
         models.Iwak.objects.create(
             nama_iwak=req.POST['nama_iwak'],
-            harga=req.POST['harga'],
-            stok=req.POST['stok'])
+            jenis=req.POST['jenis'],
+            harga=req.POST['harga'])
         return redirect('/iwak')
 
     iwk = models.Iwak.objects.all()
@@ -24,8 +24,8 @@ def ganti(req, id):
     if req.POST:
         Iwak = models.Iwak.objects.filter(pk=id).update(
             nama_iwak=req.POST['nama_iwak'],
-            harga=req.POST['harga'],
-            stok=req.POST['stok'])  
+            jenis=req.POST['jenis'],
+            harga=req.POST['harga'])
         return redirect('/iwak')
 
     iwk = models.Iwak.objects.filter(pk=id).first()

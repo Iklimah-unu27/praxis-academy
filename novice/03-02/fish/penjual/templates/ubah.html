@@ -5,9 +5,12 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <h4> Edit Penjual </h4><br>
-                    <input type="text" name="nm_penjual" class="form-control" value="{{data.nm_penjual}}">
-                    <input type="text" name="alamat" class="form-control" value="{{data.alamat}}">
-                    <input type="number" name="stok_ikan" class="form-control" value="{{data.stok_ikan}}">
+                    Edit Nama : <input type="text" name="nm_penjual" class="form-control" value="{{data.nm_penjual}}"><br><br>
+                    Edit Alamat : <input type="text" name="alamat" class="form-control" value="{{data.alamat}}"><br><br>
+                    Edit No Telf : <input type="number" name="no_telf" class="form-control" value="{{data.no_telf}}"><br><br>
+                    Edit Stok Ikan Hias : <input type="number" name="stok_ikan_hias" class="form-control" value="{{data.stok_ikan_hias}}"><br><br>
+                    Edit Stok Ikan Konsumsi : <input type="number" name="stok_ikan_konsum" class="form-control" value="{{data.stok_ikan_konsum}}"><br><br>
+                    Edit Total Terjual : <input type="number" name="total_terjual" class="form-control" value="{{data.total_terjual}}"><br><br>
                     <button type="submit" class="btn btn-primary mt-2">Simpan</button>
                 </div>
             </form>

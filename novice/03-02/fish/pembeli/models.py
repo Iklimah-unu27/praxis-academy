@@ -5,6 +5,7 @@ class pembeli (models.Model):
     nama_pmbli = models.TextField()
     alamat = models.TextField()
     total_beli = models.TextField()
+    # jenis_dibeli = models.TextField()
     
 
 

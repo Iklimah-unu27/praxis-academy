@@ -7,6 +7,7 @@ def index(req):
             nama_pmbli=req.POST['nama_pmbli'],
             alamat=req.POST['alamat'],
             total_beli=req.POST['total_beli'])
+            # jenis_dibeli=req.POST['jenis_dibeli'])
         return redirect('/pembeli/')
 
     buyer = models.pembeli.objects.all()
@@ -25,7 +26,8 @@ def edit(req, id):
         pembeli = models.pembeli.objects.filter(pk=id).update(
             nama_pmbli=req.POST['nama_pmbli'],
             alamat=req.POST['alamat'],
-            total_beli=req.POST['total_beli'])  
+            total_beli=req.POST['total_beli'])
+            # jenis_dibeli=req.POST['jenis_dibeli'])
         return redirect('/pembeli')
 
     buyer = models.pembeli.objects.filter(pk=id).first()

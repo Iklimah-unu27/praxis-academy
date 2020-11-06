@@ -5,16 +5,17 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <h4> Edit Pembeli </h4><br>
-                    <input type="text" name="nama_pmbli" class="form-control" value="{{data.nama_pmbli}}">
-                    <input type="text" name="alamat" class="form-control" value="{{data.alamat}}">
-                    <input type="number" name="total_beli" class="form-control" value="{{data.total_beli}}">
-                    <button type="submit" class="btn btn-primary mt-2">Simpan</button>
+                    Edit Nama : <input type="text" name="nama_pmbli" class="form-control" value="{{data.nama_pmbli}}"> <br><br>
+                    Edit Alamat : <input type="text" name="alamat" class="form-control" value="{{data.alamat}}"><br><br>
+                    Edit Total Beli Perkilo : <input type="number" name="total_beli" class="form-control" value="{{data.total_beli}}"><br><br>
+                    <!-- Jenis Ikan Dibeli : <input type="text" name="jenis_dibeli" class="form-control" value="{{data.jenis_dibeli}}"><br>i<br> -->
+                    <button type="submit" class="btn btn-primary mt-2">Simpan</button> <br><br>
+                    <input type="button" class="btn btn-outline-primary" aria-pressed="false" data-toggle="button" value="Kembali" onclick="history.back(-1)"/>
                 </div>
             </form>
         </div>
     </div>  
-    <input type="button" class="btn btn-outline-primary"" aria-pressed="false" data-toggle="button" value="Kembali"
-    onclick="history.back(-1)"/>
+    
  <!-- <form class="needs-validation" novalidate>
    <br>
     <div class="form-row">

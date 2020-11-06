@@ -14,3 +14,8 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fish.settings')
 
 application = get_wsgi_application()
+
+# bikin primary key ama foreign key biar bisa nyambung
+# benenrin nomer 
+# bikin halaman login
+# benerin data tabel biar keliatan relasinya
