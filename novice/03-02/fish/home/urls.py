@@ -6,5 +6,7 @@ from . import views
 urlpatterns = [
     # path('', views.halog),
     path('', views.index),
-    
+        
+        
+           
 ]
