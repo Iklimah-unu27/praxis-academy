@@ -5,8 +5,8 @@
       {% if registered %}
         <h1>Terima kasih telah registrasi!</h1>
       {% else %}
-        <h1>Register Disini</h1>
-        <h3>Silahkan isi form dibawah ini</h3><form enctype="multipart/form-data" method="POST">
+        <h1>Register Disini</h1><br><br>
+        <h3>Silahkan isi form dibawah ini dengan baik dan benar</h3><form enctype="multipart/form-data" method="POST">
           {% csrf_token %}
           {{ user_form.as_p }}
           {{ profile_form.as_p }}
