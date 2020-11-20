@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pengelola',
     'frondend',
-    'acounts',
     'home',
+    'acounts',
+    'document',
+    'penyediajasa',
+    'static',
+    'templates',
 ]
 
 MIDDLEWARE = [
