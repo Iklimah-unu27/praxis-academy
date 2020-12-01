@@ -2,6 +2,30 @@
 
 {% load static %}
 {% block content %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+    }
+    
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+    <body>
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -23,7 +47,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="/"><img style="width: 120px;" src="{%static 'assets/img/logo/2.jpg' %}" alt=""></a>
+                                <a href="/"><img style="width: 120px;" src="{%static 'assets/img/logo/3.jpg' %}" alt=""></a>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -33,7 +57,7 @@
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
                                             <li><a href="/">Home</a></li>
-                                            <li><a href="{% url 'guru' %}"> Profil</a></li>
+                                            <li><a href="{% url 'guru' %}"> Kategori</a></li>
                                             <li><a href="{% url 'about' %}">About</a></li>
                                         </ul>
                                     </nav>
@@ -60,78 +84,36 @@
         <!-- slider Area Start-->
         <div class="slider-area ">
             <!-- Mobile Menu -->
-            <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="{% static 'assets/img/hero/h1_hero.jpg' %}">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-9 col-md-10">
-                                <div class="hero__caption">
-                                    <h1>Belajar Bareng Yukkk...</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Search Box -->
-                        <div class="row">
-                            <div class="col-xl-8">
-                                <!-- form -->
-                                <form action="#" class="search-box">
-                                    <div class="select-form">
-                                        <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">Tingkat Ngaji</option>
-                                                <option value="">Tingkat Dasar/pemula</option>
-                                                <option value="">Tingkat Lanjutan/mahir</option>
-                                                <option value="">Tingkat TInggi</optiaon>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="select-form">
-                                        <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">Kecamata</option>
-                                                <option value="">Sleman</option>
-                                                <option value="">Bantul</option>
-                                                <option value="">Gunung Kidul</option>
-                                                <option value="">Kulon Progo</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="search-form">
-                                        <a href="#">Pilih Lokasi</a>
-                                    </div>	
-                                </form>	
-                            </div>
-                        </div>
+            <div class="our-services section-pad-t30" style="background-color: rgb(216, 216, 245);">
+            <div class="w3-container" style="padding:128px 16px" id="team">
+                <h3 class="w3-center">THE TEAM</h3>
+                <p class="w3-center w3-large">The ones who runs this company</p>
+                <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+                  <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+                      <div class="w3-container">
+                        <h3>John Doe</h3>
+                        <p class="w3-opacity">CEO & Founder</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+                  <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                      <div class="w3-container">
+                        <h3>Anja Doe</h3>
+                        <p class="w3-opacity">Art Director</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
         </div>
-        <!-- slider Area End-->
-        <!-- Our Services Start -->
-        <div class="our-services section-pad-t30">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <span>Keunggulan Kami</span>
-                            <h2>Kenapa harus di Jasa Guru??</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-contnet-center">
-                    <div class="hero-cap text-center">
-                    <h3 class="hero-cap text-center" >Kami menyediakan layanan pendidikan yang komprehensif. <br>
-                        Fokus kepada setiap siswa, melayani siswa dari berbagai umur dan berbagai kalangan <br>untuk meraih kesuksesan dalam akademis,
-                        meningkatkan skill dan pengetahuan siswa, <br> selalu menjadikan kebutuhan dan tujuan siswa dalam belajar sebagai landasan utama <br>dalam memberikan layanan</h3>
-                    </div>
-                    </div>
-                <!-- More Btn -->
-                <!-- Section Button -->
-            </div>
-            </div>
-        </div>
-        <!-- Our Services End -->
+        
         <!-- How  Apply Process Start-->
         <div class="apply-process-area apply-bg pt-150 pb-150" data-background="{%static 'assets/img/gallery/how-applybg.png' %}">
             <div class="container">
@@ -248,96 +230,12 @@
     </main>
     <footer>
         <!-- Footer Start-->
-        <div class="footer-area footer-bg footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                             <div class="footer-tittle">
-                                 <h4>About Us</h4>
-                                 <div class="footer-pera">
-                                     <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
-                                </div>
-                             </div>
-                         </div>
-
-                       </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Contact Info</h4>
-                                <ul>
-                                    <li>
-                                    <p>Address :Your address goes
-                                        here, your demo address.</p>
-                                    </li>
-                                    <li><a href="#">Phone : +8880 44338899</a></li>
-                                    <li><a href="#">Email : info@colorlib.com</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Important Link</h4>
-                                <ul>
-                                    <li><a href="#"> View Project</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Testimonial</a></li>
-                                    <li><a href="#">Proparties</a></li>
-                                    <li><a href="#">Support</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-               <!--  -->
-               <div class="row footer-wejed justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <!-- logo -->
-                        <div class="footer-logo mb-20">
-                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="footer-tittle-bottom">
-                        <span>5000+</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="footer-tittle-bottom">
-                            <span>451</span>
-                            <p>Talented Hunter</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <!-- Footer Bottom Tittle -->
-                        <div class="footer-tittle-bottom">
-                            <span>568</span>
-                            <p>Talented Hunter</p>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>
+       
         <!-- footer-bottom area -->
         <div class="footer-bottom-area footer-bg">
             <div class="container">
                 <div class="footer-border">
                      <div class="row d-flex justify-content-between align-items-center">
-                         <div class="col-xl-10 col-lg-10 ">
-                             <div class="footer-copy-right">
-                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                             </div>
-                         </div>
                          <div class="col-xl-2 col-lg-2">
                              <div class="footer-social f-right">
                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
