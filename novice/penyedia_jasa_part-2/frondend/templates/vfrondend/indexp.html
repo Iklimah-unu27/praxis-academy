@@ -64,7 +64,16 @@
                                 </div>          
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
-                                    <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+                                  <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Register
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby ="btnGroupDrop1" class="btn btn-primary">
+                                      <a class="dropdown-item" href="{% url 'register' %}">Register User</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="{% url 'register' %}">Register Pengajar</a>
+                                    </div>
+                                  </div>
                                     <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
                                 </div>
                             </div>
@@ -101,7 +110,7 @@
                         <p class="w3-opacity">CEO & Founder</p>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                         <!-- <p><button class="w3-button w3-light-grey w3-block">Detail</button></p>                          -->
-                        <a href="{% url 'login' %}"><button class="w3-button w3-light-grey w3-block"> Detail</button></a>
+                        <a href="{% url 'home' %}"><button class="w3-button w3-light-grey w3-block"> Detail</button></a>
 
                       </div>
                     </div>
