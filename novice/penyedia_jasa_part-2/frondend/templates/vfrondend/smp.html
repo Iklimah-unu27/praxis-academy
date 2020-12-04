@@ -31,12 +31,17 @@
                                  <!-- Main-menu -->
                                  <div style="margin-left: 60px;" class="main-menu">
                                      <nav class="d-none d-lg-block">
-                                         <h2>Halaman Detail</h2>
+                                         <ul id="navigation">
+                                             <li><a href="/">Home</a></li>
+                                             <li><a href="{% url 'guru' %}"> Kategori</a></li>
+                                             <li><a href="{% url 'about' %}">About</a></li>
+                                         </ul>
                                      </nav>
                                  </div>          
                                  <!-- Header-btn -->
                                  <div class="header-btn d-none f-right d-lg-block">
-                                   <a style="margin-bottom: 15px;" class="btn btn-danger" href="{% url '' %}">logout</a>
+                                   <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+                                     <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
                                  </div>
                              </div>
                          </div>
@@ -88,4 +93,6 @@
             </div>
         </div>
     </div>
+    
+
 {% endblock %}

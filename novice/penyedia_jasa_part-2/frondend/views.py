@@ -13,3 +13,6 @@ def about(request):
 
 def guru(request):
     return render(request, 'vfrondend/guru.html')
+
+def smp(request):
+    return render(request, 'vfrondend/smp.html')
