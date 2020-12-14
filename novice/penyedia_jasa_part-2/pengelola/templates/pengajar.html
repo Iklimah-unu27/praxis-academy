@@ -156,12 +156,13 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th> no </th>
-                          <th> nama </th>
+                          <th> No </th>
+                          <th> Nama </th>
                           <th> Nomor </th>
-                          <th> kelamin </th>
-                          <th> ampu </th>
-                          <th> action </th>
+                          <th> Alamat </th>
+                          <th> Biaya </th>
+                          <th> Umur </th>
+                          <th> Kelola </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -172,13 +173,14 @@
                             <!-- <img src="{% static 'asset/images/faces-clipart/pic-1.png' %}" alt="image" /> -->
                           </td> 
                           <td> {{guru.nama}} </td>
-                          <td> {{guru.no}} </td>
-                          <td> {{guru.kelamin}} </td>
-                          <td> {{guru.ampu}} </td>
+                          <td> {{guru.nohp}} </td>
+                          <td> {{guru.alamat}} </td>
+                          <td> {{guru.biaya}} </td>
+                          <td> {{guru.usia}} </td>
                           <td>
-                            <a href="{{ guru.id }}/detailguru/" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                            <a href="{{ guru.id }}/edit" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="{{ guru.id }}/delete/" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            <a href="{{ guru.id }}/detailguru" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                            <a href="{{ guru.id }}/editguru" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="{{ guru.id }}/deleteguru" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                           </td>
                         </tr>
                         {% endfor %}

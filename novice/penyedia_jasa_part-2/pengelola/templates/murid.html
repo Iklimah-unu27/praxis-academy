@@ -156,12 +156,13 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th> no </th>
-                          <th> nama </th>
-                          <th> nomor </th>
+                          <th> No </th>
+                          <th> Nama </th>
+                          <th> Nomor hp </th>
+                          <th> Kelamin </th>
                           <th> pendidikan </th>
-                          <th> kelamin </th>
-                          <th> action </th>
+                          <th> Pendidikan </th>
+                          <th> Kelola </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -172,13 +173,14 @@
                             <!-- <img src="{% static 'asset/images/faces-clipart/pic-1.png' %}" alt="image" /> -->
                           </td>
                           <td> {{murid.nama}} </td>
-                          <td> {{murid.no}} </td>
-                          <td> {{murid.pendidikan}} </td>
-                          <td> {{murid.kelamin}} </td>
+                          <td> {{murid.alamat}} </td>
+                          <td> {{murid.nohp}} </td>
+                          <td> {{murid.usia}} </td>
+                          <td> {{murid.pnd}} </td>
                           <td>
-                            <a href="{{ murid.id }}/detailmurid/" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                            <a href="{{ murid.id }}/edit" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="{{ murid.id }}/delete/" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            <a href="{{ murid.id }}/detailmurid" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                            <a href="{{ murid.id }}/editmurid" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="{{ murid.id }}/deletemurid" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                           </td>
                         </tr>
                         {% endfor %}

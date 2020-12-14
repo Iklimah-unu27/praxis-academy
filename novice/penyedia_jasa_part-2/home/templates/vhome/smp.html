@@ -23,7 +23,7 @@
                          <div class="col-lg-3 col-md-2">
                              <!-- Logo -->
                              <div class="logo">
-                                 <a href="/"><img style="width: 120px;" src="{%static 'assets/img/logo/3.jpg' %}" alt=""></a>
+                                 <a href="{% url 'home' %}"><img style="width: 120px;" src="{%static 'assets/img/logo/3.jpg' %}" alt=""></a>
                              </div>  
                          </div>
                          <div class="col-lg-9 col-md-9">
@@ -31,13 +31,14 @@
                                  <!-- Main-menu -->
                                  <div style="margin-left: 60px;" class="main-menu">
                                      <nav class="d-none d-lg-block">
-                                         <h2>Halaman Detail</h2>
+                                         <div class="container">
+                                            <h2>Halaman Profil</h2>
+                                         </div>
                                      </nav>
                                  </div>          
                                  <!-- Header-btn -->
-                                 <div class="header-btn d-none f-right d-lg-block">
-                                   <a style="margin-bottom: 15px;" class="btn btn-danger" href="{% url '' %}">logout</a>
-                                 </div>
+                                 <a style="margin-bottom: 15px;" class="btn btn-danger" aria-pressed="false" data-toggle="button" value="Kembali"
+                                 onclick="history.back(-1)">logout</a>
                              </div>
                          </div>
                          <!-- Mobile Menu -->
@@ -50,42 +51,56 @@
         </div>
         <!-- Header End -->
     </header>
-
-<div class="slider-area" style="background-color: rgb(206, 236, 236);">
-    <!-- Mobile Menu -->
-    
-    <div class="our-services section-pad-t30">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-tittle text-center">
-                    <img src="{% static 'assets/img/testmonial/testimonial-founder.png' %}" lass="founder-img mb-30" >
-                    <div class="w3-container">
-                      <h3>Iklimah Safira S.</h3>
-                      <p class="w3-opacity">CEO & Founder</p>
-                      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    </div>
-                  </div>               
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+    <body class="w3-light-grey">
+        <div class="our-services section-pad-t30">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-tittle text-center">
+                        <div class="w3-container"><br><br><br>
+                            <div class="w3-twothird">
+                                <div class="w3-container w3-card w3-white w3-margin-bottom " class="box-2"> <br><br>
+                                    <img src="{% static 'assets/img/testmonial/testimonial-founder.png' %}" lass="founder-img mb-30" >
+                                  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portofolio</h2>
+                                  <div class="w3-container">
+                                      
+                                    <h5 class="w3-opacity"><b>Nama Lengkap</b></h5>
+                                    <h4>Tarzania Monalisa</h4>
+                                    <hr>
+                                  </div>
+                                  <div class="w3-container">
+                                    <h5 class="w3-opacity"><b>Nomer Aktif</b></h5>
+                                    <H4>34567890</H4>
+                                    <hr>
+                                  </div>
+                                  <div class="w3-container">
+                                    <h5 class="w3-opacity"><b>Alamat </b></h5>
+                                    <h4>Malioboro,  </h4>
+                                  </div>
+                                  <hr>
+                                  <div class="w3-container">
+                                    <h5 class="w3-opacity"><b>Jenis Kelamin </b></h5>
+                                    <h4>Perempuan </h4>
+                                  </div>
+                                  <hr>
+                                  <div class="w3-container">
+                                    <h5 class="w3-opacity"><b>Usia </b></h5>
+                                    <h4>30 Tahun </h4>
+                                  </div>
+                                  <hr>
+                                  <div class="w3-container">
+                                    <h5 class="w3-opacity"><b>Skill </b></h5>
+                                    <h4>banyak</h4>
+                                  </div>
+                                </div>
+                        </div>
+                      </div>               
+                </div>
             </div>
-        </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <form method="POST" class="mt-3">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <h4> DETAIL PENGAJAR </h4><br>
-                        Nama Lengkap : <input type="text" name="nm_penjual" class="form-control" value="{{data.nm_penjual}}"><br><br>
-                        No Telf : <input type="number" name="no_telf" class="form-control" value="{{data.no_telf}}"><br><br>
-                        Alamat : <input type="text" name="alamat" class="form-control" value="{{data.alamat}}"><br><br>
-                        Biaya Jasa: <input type="number" name="stok_ikan_hias" class="form-control" value="{{data.stok_ikan_hias}}"><br><br>
-                        Jenis Kelamin : <input type="number" name="stok_ikan_konsum" class="form-control" value="{{data.stok_ikan_konsum}}"><br><br>
-                        Foto diri : <input type="number" name="total_terjual" class="form-control" value="{{data.total_terjual}}"><br><br>
-                        Usia : <input type="text" name="alamat" class="form-control" value="{{data.alamat}}"><br><br>
-                        <button type="submit" class="btn btn-primary mt-2">Simpan</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 {% endblock %}
